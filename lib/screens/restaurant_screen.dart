@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RestaurantScreen extends StatelessWidget {
   const RestaurantScreen({Key key}) : super(key: key);
@@ -12,31 +13,70 @@ class RestaurantScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Container(
-              child: Image.asset(
-                "image/casey-lee-awj7sRviVXo-unsplash.jpg",
-                fit: BoxFit.fill,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10.0),
+              child: Container(
+                child: Image.asset(
+                  "image/casey-lee-awj7sRviVXo-unsplash.jpg",
+                  fit: BoxFit.fill,
+                ),
+                height: 500.0,
+                width: 380.0,
               ),
-              height: 500.0,
-              width: 380.0,
             ),
             Container(
-              color: Color(0xffB8A383),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: Color(0xffB8A383),
+              ),
               height: 300.0,
               width: 380.0,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text("CINCLER CHICAGO \n RIVER NORTH \n 120 W HUBBARD \n IL 60654-US"),
-                  Text("120 W Hubbard St. Chicago, \n IL 60654, United States"),
-                  Text("Opening Hours \n Open 2PM"),
-                  MaterialButton(
-                    onPressed: () {},
-                    textColor: Colors.white,
-                    child: Text("Find a table"),
-                    color: Colors.black,
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(15.0, 2.0, 15.0, 2.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "CINCLER CHICAGO \nRIVER NORTH \n120 W HUBBARD \nIL 60654-US",
+                      style: TextStyle(
+                        fontSize: 35.0,
+                      ),
+                    ),
+                    Divider(height: 14.0, thickness: 1.0, color: Colors.black),
+                    Text(
+                      "120 W Hubbard St. Chicago, \nIL 60654, United States",
+                      style: GoogleFonts.istokWeb(
+                        fontSize: 10.0,
+                      ),
+                    ),
+                    RichText(
+                      text: TextSpan(
+                          style: GoogleFonts.istokWeb(
+                              fontSize: 10.0, color: Colors.black),
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: "Opening Hours \n",
+                            ),
+                            TextSpan(
+                                text: "Open 2PM",
+                                style: TextStyle(fontWeight: FontWeight.w800))
+                          ]),
+                    ),
+                    SizedBox(height: 5.0),
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: FlatButton(
+                        onPressed: () {},
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        textColor: Colors.white,
+                        child: Text("Find a table"),
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
