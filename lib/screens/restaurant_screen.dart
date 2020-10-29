@@ -45,13 +45,14 @@ class RestaurantScreen extends StatelessWidget {
                     Divider(height: 14.0, thickness: 1.0, color: Colors.black),
                     Text(
                       "120 W Hubbard St. Chicago, \nIL 60654, United States",
-                      style: GoogleFonts.istokWeb(
+                      style: GoogleFonts.poppins(
                         fontSize: 10.0,
                       ),
                     ),
+                    SizedBox(height: 5.0),
                     RichText(
                       text: TextSpan(
-                          style: GoogleFonts.istokWeb(
+                          style: GoogleFonts.poppins(
                               fontSize: 10.0, color: Colors.black),
                           children: <TextSpan>[
                             TextSpan(
@@ -71,7 +72,7 @@ class RestaurantScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20.0),
                         ),
                         textColor: Colors.white,
-                        child: Text("Find a table"),
+                        child: Text("Find a table", style: GoogleFonts.poppins(fontSize: 10.0)),
                         color: Colors.black,
                       ),
                     ),
