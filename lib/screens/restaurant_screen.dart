@@ -49,7 +49,7 @@ class RestaurantScreen extends StatelessWidget {
                         fontSize: 10.0,
                       ),
                     ),
-                    SizedBox(height: 5.0),
+                    SizedBox(height: 8.0),
                     RichText(
                       text: TextSpan(
                           style: GoogleFonts.poppins(
@@ -63,11 +63,13 @@ class RestaurantScreen extends StatelessWidget {
                                 style: TextStyle(fontWeight: FontWeight.w800))
                           ]),
                     ),
-                    SizedBox(height: 5.0),
+                    SizedBox(height: 3.0),
                     Align(
                       alignment: Alignment.bottomRight,
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          
+                        },
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
                         ),
