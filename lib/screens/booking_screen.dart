@@ -18,7 +18,7 @@ class BookingScreen extends StatelessWidget {
                 children: [
                   Row(
                     children: <Widget>[
-                      Text("2", style: TextStyle(fontSize: 65.0)),
+                      Text("2", style: TextStyle(fontSize: 60.0)),
                       SizedBox(width: 50.0),
                       Icon(Icons.keyboard_arrow_down),
                     ],
@@ -28,7 +28,7 @@ class BookingScreen extends StatelessWidget {
                   Divider(height: 25.0, thickness: 0.4, color: Colors.grey),
                   Row(
                     children: <Widget>[
-                      Text("OCT 18", style: TextStyle(fontSize: 65.0)),
+                      Text("OCT 18", style: TextStyle(fontSize: 60.0)),
                       SizedBox(width: 50.0),
                       Icon(Icons.keyboard_arrow_down),
                     ],
@@ -38,7 +38,7 @@ class BookingScreen extends StatelessWidget {
                   Divider(height: 25.0, thickness: 0.4, color: Colors.grey),
                   Row(
                     children: <Widget>[
-                      Text("7:00 PM", style: TextStyle(fontSize: 65.0)),
+                      Text("7:00 PM", style: TextStyle(fontSize: 60.0)),
                       SizedBox(width: 50.0),
                       Icon(Icons.keyboard_arrow_down),
                     ],
