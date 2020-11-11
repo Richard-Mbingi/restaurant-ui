@@ -8,11 +8,13 @@ class BookingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(15.0, 30.0, 15.0, 8.0),
+        padding: const EdgeInsets.fromLTRB(15.0, 50.0, 15.0, 15.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text("BOOK A TABLE", style: TextStyle(fontSize: 28.0)),
             Container(
+              padding: EdgeInsets.only(top: 90.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -23,9 +25,12 @@ class BookingScreen extends StatelessWidget {
                       Icon(Icons.keyboard_arrow_down),
                     ],
                   ),
-                  Text("Number of people",
-                      style: GoogleFonts.poppins(fontWeight: FontWeight.w600)),
+                  Text(
+                    "Number of people",
+                    style: GoogleFonts.poppins(fontWeight: FontWeight.w500),
+                  ),  
                   Divider(height: 25.0, thickness: 0.4, color: Colors.grey),
+                  SizedBox(height: 10.0),
                   Row(
                     children: <Widget>[
                       Text("OCT 18", style: TextStyle(fontSize: 60.0)),
@@ -34,8 +39,9 @@ class BookingScreen extends StatelessWidget {
                     ],
                   ),
                   Text("Date of reservation",
-                      style: GoogleFonts.poppins(fontWeight: FontWeight.w600)),
+                      style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   Divider(height: 25.0, thickness: 0.4, color: Colors.grey),
+                  SizedBox(height: 10.0),
                   Row(
                     children: <Widget>[
                       Text("7:00 PM", style: TextStyle(fontSize: 60.0)),
@@ -44,16 +50,19 @@ class BookingScreen extends StatelessWidget {
                     ],
                   ),
                   Text("Time of reservation",
-                      style: GoogleFonts.poppins(fontWeight: FontWeight.w600)),
+                      style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   Divider(height: 25.0, thickness: 0.4, color: Colors.grey),
+                  SizedBox(height: 10.0),
                 ],
               ),
             ),
             FlatButton(
+              padding: EdgeInsets.fromLTRB(50.0, 18.0, 50.0, 18.0),
               onPressed: () {},
-              child: Text("Find a table", style: GoogleFonts.poppins(fontSize: 11.0)),
+              child: Text("Find a table",
+                  style: GoogleFonts.poppins(fontSize: 11.0)),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
+                borderRadius: BorderRadius.circular(25.0),
               ),
               textColor: Colors.white,
               color: Colors.black,
