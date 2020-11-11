@@ -1,4 +1,4 @@
-# restaurant_booking
+# Restaurant booking
 
 A new Flutter project.
 
